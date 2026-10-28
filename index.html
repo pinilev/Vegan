@@ -1119,7 +1119,7 @@
                     <div className="max-w-4xl mx-auto">
                         
                         {/* תפריט קטגוריות עליון */}
-                        <div className="flex flex-wrap justify-center gap-2 mb-4">
+                        <div className="flex flex-wrap justify-center items-center gap-2 mb-6">
                             {categories.map(cat => (
                                 <button
                                     key={cat.id}
@@ -1133,10 +1133,8 @@
                                     {cat.label}
                                 </button>
                             ))}
-                        </div>
 
-                        {/* אפשרות סינון מתכוני תנור */}
-                        <div className="flex justify-center mb-6">
+                            {/* אפשרות סינון מתכוני תנור - משמאל ל'כריכים וטורטיות' */}
                             <label className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-green-200 shadow-sm cursor-pointer hover:bg-green-50 transition-colors text-sm text-gray-700 font-medium select-none">
                                 <input
                                     type="checkbox"
@@ -1144,7 +1142,7 @@
                                     onChange={(e) => setHideOvenRecipes(e.target.checked)}
                                     className="w-4 h-4 text-green-600 rounded border-gray-300 focus:ring-green-500 accent-green-600 cursor-pointer"
                                 />
-                                <span>🔥 הסתר מתכונים המצריכים אפייה בתנור</span>
+                                <span>🔥 תנור</span>
                             </label>
                         </div>
 
